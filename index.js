@@ -1,3 +1,4 @@
+const Eris = require("eris");
 const express = require("express");
 const app = express();
 
@@ -44,7 +45,7 @@ async function processIteration() {
 
   if (await sendRequest(randomString)) {
     // Replace 'YOUR_DISCORD_WEBHOOK_URL' with your actual Discord webhook URL
-    const discordWebhookUrl = "";
+    const discordWebhookUrl = new Eris(process.env.token);
     const gifUrl =
       "https://tenor.com/view/futakana-lewd-anime-blush-shy-gif-17423467"; // Replace with your actual GIF URL
 
