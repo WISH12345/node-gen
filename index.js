@@ -17,7 +17,7 @@ const fs = require("fs");
 const characters =
   "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-function generateRandomString(length = 5) {
+function generateRandomString(length = 6) {
   let randomString = "";
   for (let i = 0; i < length; i++) {
     randomString += characters.charAt(
