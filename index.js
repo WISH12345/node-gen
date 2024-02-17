@@ -17,7 +17,7 @@ const fs = require("fs");
 const characters =
   "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-function generateRandomString(length = 6) {
+function generateRandomString(length = 5) {
   let randomString = "";
   for (let i = 0; i < length; i++) {
     randomString += characters.charAt(
@@ -60,7 +60,7 @@ async function processIteration() {
 }
 
 async function main() {
-  const iterations = 100; // You can adjust the number of iterations as needed
+  const iterations = 999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999; // You can adjust the number of iterations as needed
 
   for (let i = 0; i < iterations; i++) {
     await processIteration();
